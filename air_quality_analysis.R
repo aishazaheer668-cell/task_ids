@@ -42,8 +42,8 @@ air_quality <- air_quality %>%
 cor_PM25 <- cor(air_quality$PM2.5, air_quality$DiseaseRate, use = "complete.obs")
 cor_PM10 <- cor(air_quality$PM10,  air_quality$DiseaseRate, use = "complete.obs")
 
-cat("Correlation (PM2.5 vs Respiratory Cases):", cor_PM25, "\n")
-cat("Correlation (PM10 vs Respiratory Cases):", cor_PM10, "\n")
+cat("Correlation (PM2.5 vs Disease Rate):", cor_PM25, "\n")
+cat("Correlation (PM10 vs Disease Rate):", cor_PM10, "\n")
 
 # --- Step 7: Identify High-Risk Zones ---
 high_risk_zones <- air_quality %>%
